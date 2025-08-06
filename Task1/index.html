@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robo (2010) - My Favorite Movie</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Beautiful CSS Styling -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #1f1c2c, #928dab);
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .movie-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      padding: 30px;
+      width: 100%;
+      max-width: 700px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .movie-card h1 {
+      font-size: 2.5rem;
+      margin: 0.3em 0;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #eee;
+      margin-bottom: 20px;
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      border: 3px solid #fff;
+    }
+
+    .details {
+      text-align: left;
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .details p {
+      margin: 8px 0;
+      font-weight: 500;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #00e6e6;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .movie-card {
+        padding: 20px;
+      }
+
+      .movie-card h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="movie-card">
+    <h2>🎬 My Favorite Movie</h2>
+    <h1>🤖 Robo (2010)</h1>
+    <p class="tagline">"A machine with emotions... a story beyond imagination."</p>
+
+    <!-- Movie Poster Image -->
+    <img src="https://static.toiimg.com/photo/61259441.cms.jpg" alt="Robo Movie Poster">
+
+    <!-- Movie Details -->
+    <div class="details">
+      <p>🎭 <strong>Genre:</strong> Sci-Fi, Action, Drama</p>
+      <p>🎥 <strong>Director:</strong> Shankar</p>
+      <p>🌟 <strong>Stars:</strong> Rajinikanth, Aishwarya Rai Bachchan</p>
+      <p>🎶 <strong>Music:</strong> A. R. Rahman</p>
+    </div>
+
+    <!-- Movie Summary -->
+    <p>
+      The film follows a brilliant scientist who creates a humanoid robot. But as the robot gains human emotions, things spiral into chaos. 
+      Packed with visual effects and a powerful storyline, <strong>Robo</strong> remains one of India's iconic sci-fi movies.
+    </p>
+
+    <!-- IMDb Link -->
+    <a href="https://www.imdb.com/title/tt1305797/" target="_blank">🔗 View on IMDb</a>
+
+    <!-- Show Fact Button -->
+    <button onclick="showFact()">🚀 Show Movie Fact</button>
+  </div>
+
+  <!-- JavaScript for Alert -->
+  <script>
+    function showFact() {
+      alert("Did you know? Robo was one of the most expensive Indian films at the time of its release!");
+    }
+  </script>
+</body>
+</html>
