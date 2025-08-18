@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Web Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1>✨ My Stylish Web Page ✨</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">To-Do List</a>
+  </nav>
+
+  <main class="grid-container">
+    <!-- Contact Form -->
+    <section class="form-section card">
+      <h2>📬 Contact Form</h2>
+      <form id="contactForm">
+        <label>Name:
+          <input type="text" id="name" placeholder="Your name" />
+        </label>
+        <label>Email:
+          <input type="email" id="email" placeholder="you@example.com" />
+        </label>
+        <label>Message:
+          <textarea id="message" rows="4" placeholder="Your message"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+        <p class="error" id="formError"></p>
+      </form>
+    </section>
+
+    <!-- To-Do List -->
+    <section class="todo-section card">
+      <h2>📝 To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter a task..." />
+      <button id="addTaskBtn">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
