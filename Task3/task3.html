@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Introduction to  Data Structures and Algorithms (DSA)</title>
+  <link rel="stylesheet" href="task3.css" />
+</head>
+<body>
+  <header>
+    <h1>Introduction to  Data Structures and Algorithms (DSA)</h1>
+    <p>Basic Information of  Data Structures and Algorithms (DSA)</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#quiz">Interactive Quiz</a></li>
+      <li><a href="#api">API Data</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Quiz Section -->
+    <section id="quiz">
+      <h2>Interactive Quiz</h2>
+      <div class="quiz-container" id="quizContainer">
+        <div class="quiz-question">
+          <h3>What is the time complexity of binary search algorithm?</h3>
+          <div class="quiz-options">
+            <label><input type="radio" name="q1" value="a">  O(n)</label>
+            <label><input type="radio" name="q1" value="b"> O(log n) </label>
+            <label><input type="radio" name="q1" value="c"> O(n log n)</label>
+            <label><input type="radio" name="q1" value="d">  O(1)</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>Which data structure uses FIFO (First In First Out)?</h3>
+          <div class="quiz-options">
+            <label><input type="radio" name="q2" value="a">  Stack</label>
+            <label><input type="radio" name="q2" value="b">Queue </label>
+            <label><input type="radio" name="q2" value="c"> Tree</label>
+             <label><input type="radio" name="q2" value="d"> Graph</label>
+
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>Which traversal method is used for Depth First Search (DFS) in a tree?</h3>
+          <div class="quiz-options">
+            <label><input type="radio" name="q3" value="a">  Level Order</label>
+            <label><input type="radio" name="q3" value="b">Inorder </label>
+            <label><input type="radio" name="q3" value="c">Preorder  </label>
+            <label><input type="radio" name="q3" value="d">Breadth First </label>
+
+          </div>
+        </div>
+
+        <button id="submitQuiz">Submit Quiz</button>
+        <div id="quizResult" style="margin-top: 15px;"></div>
+      </div>
+    </section>
+
+    <!-- API Section -->
+    <section id="api">
+      <h2>API Data Fetching</h2>
+      <p>Click the button below to fetch a random programming joke:</p>
+      <button id="fetchJoke">Get Random Joke</button>
+      <div class="api-data" id="jokeDisplay"></div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 DSA Information development. All rights reserved.</p>
+  </footer>
+
+  <script src="task3.js"></script>
+</body>
+</html>
